@@ -46,13 +46,26 @@
             height: auto;
             border-radius: 5px;
             margin-top: 10px;
-            cursor: pointer;
+            position: relative;
         }
         .offer-description {
             background-color: #fff;
         }
         .discount-section {
             background-color: #dfe7f5;
+        }
+        .discount-amount {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff5733;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 10; /* Ensure it is above the image */
+            display: inline-block; /* Ensure it doesn't collapse */
         }
         .form-button {
             display: block;
@@ -93,14 +106,15 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to DEEPCUP TOURNAMENT</h1>
+        <h1>Welcome to DEERCUP TOURNAMENT</h1>
     </header>
     <div class="container">
         <div class="offer">
             <h2>BOOK NOW TO GET EXCLUSIVE DISCOUNT</h2>
             <p>Get a chance to win Honor 200 pro</p>
-            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
                 <img src="https://i.postimg.cc/d3zLsN8x/Discount-offer.png" alt="Special Offer Image">
+                
             </a>
         </div>
         <div class="offer-description">
@@ -112,8 +126,9 @@
         <div class="discount-section">
             <h3>Vespa ELEGANTE - Special Discount</h3>
             <p>Get Rs. 50,000 off on Vespa Elegante!</p>
-            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
                 <img src="https://i.postimg.cc/PJQT9ttK/Azuro.jpg" alt="Vespa Elegante Image">
+                <div class="discount-amount">Rs. 50,000 OFF</div>
             </a>
         </div>
         
@@ -121,8 +136,9 @@
         <div class="discount-section">
             <h3>Aprilia SXR 160 - Special Discount</h3>
             <p>Get Rs. 50,000 off on Aprilia SXR 160!</p>
-            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
                 <img src="https://i.postimg.cc/v81DP9FS/APRILIA-SXR160-H-057-2-C-e1705015628422.webp" alt="Aprilia SXR 160 Image">
+                <div class="discount-amount">Rs. 50,000 OFF</div>
             </a>
         </div>
         
@@ -130,8 +146,9 @@
         <div class="discount-section">
             <h3>Aprilia SR Race - Special Discount</h3>
             <p>Get Rs. 25,000 off on Aprilia SR Race!</p>
-            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
                 <img src="https://i.postimg.cc/26vH7GmN/aprilia-nepal-20240808-0001.jpg" alt="Aprilia SR Race Image">
+                <div class="discount-amount">Rs. 25,000 OFF</div>
             </a>
         </div>
         
