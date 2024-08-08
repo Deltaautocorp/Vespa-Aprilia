@@ -1,46 +1,58 @@
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scooter Importer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #444;
             color: white;
             padding: 1rem;
             text-align: center;
         }
         .container {
-            max-width: 1200px;
-            margin: auto;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-        .offer {
-            background-color: #ffeb3b;
+        .offer, .offer-description, .discount-section {
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 5px;
             text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
-        .offer img {
+        .offer:hover, .offer-description:hover, .discount-section:hover {
+            transform: scale(1.02);
+            background-color: #f1f1f1;
+        }
+        .offer {
+            background-color: #e0e0e0;
+        }
+        .offer img, .discount-section img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
             margin-top: 10px;
+            cursor: pointer;
         }
         .offer-description {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        .discount-section {
+            background-color: #dfe7f5;
         }
         .form-button {
             display: block;
@@ -48,34 +60,84 @@
             margin-top: 20px;
         }
         .form-button a {
-            background-color: #333;
+            background-color: #ff5733;
             color: white;
-            padding: 10px 15px;
+            padding: 15px 25px;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         .form-button a:hover {
-            background-color: #555;
+            background-color: #ff7849;
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                padding: 10px;
+            }
+            .offer, .offer-description, .discount-section {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            .form-button a {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
         }
     </style>
-
-
+</head>
+<body>
     <header>
         <h1>Welcome to Vespa / Aprilia</h1>
     </header>
     <div class="container">
         <div class="offer">
-            <h2>Special Offer: Get 20% Off on Your First Purchase!</h2>
-            <p>Use the code FIRST20 at checkout.</p>
-            <img src="https://i.postimg.cc/xTHKLWnn/Monsoon-Offer.png" alt="Special Offer Image">
+            <h2>BOOK NOW TO GET EXCLUSIVE DISCOUNT</h2>
+            <p>Get a chance to win Honor 200 pro</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+                <img src="https://i.postimg.cc/d3zLsN8x/Discount-offer.png" alt="Special Offer Image">
+            </a>
         </div>
         <div class="offer-description">
             <h3>About Our Offer</h3>
             <p>We are excited to offer a special discount on our scooters for first-time customers. Use the code FIRST20 during checkout to receive a 20% discount on your first purchase. Our scooters are known for their quality, durability, and stylish designs. Don't miss out on this limited-time offer to own a top-notch scooter at an unbeatable price!</p>
         </div>
+        
+        <!-- Discount Section 1 -->
+        <div class="discount-section">
+            <h3>Vespa ELEGANTE - Special Discount</h3>
+            <p>Get Rs. 50,000 off on Vespa Elegante!</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+                <img src="https://i.postimg.cc/PJQT9ttK/Azuro.jpg" alt="Vespa Elegante Image">
+            </a>
+        </div>
+        
+        <!-- Discount Section 2 -->
+        <div class="discount-section">
+            <h3>Aprilia SXR 160 - Special Discount</h3>
+            <p>Get Rs. 50,000 off on Aprilia SXR 160!</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+                <img src="https://i.postimg.cc/v81DP9FS/APRILIA-SXR160-H-057-2-C-e1705015628422.webp" alt="Aprilia SXR 160 Image">
+            </a>
+        </div>
+        
+        <!-- Discount Section 3 -->
+        <div class="discount-section">
+            <h3>Aprilia SR Race - Special Discount</h3>
+            <p>Get Rs. 25,000 off on Aprilia SR Race!</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">
+                <img src="https://i.postimg.cc/26vH7GmN/aprilia-nepal-20240808-0001.jpg" alt="Aprilia SR Race Image">
+            </a>
+        </div>
+        
         <div class="form-button">
             <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">Fill Out Our Form</a>
         </div>
     </div>
-
-
+</body>
+</html>
