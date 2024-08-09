@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Importer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #444;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .offer, .offer-description, .discount-section {
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .offer:hover, .offer-description:hover, .discount-section:hover {
+            transform: scale(1.02);
+            background-color: #f1f1f1;
+        }
+        .offer {
+            background-color: #e0e0e0;
+        }
+        .offer img, .discount-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .offer-description {
+            background-color: #fff;
+        }
+        .discount-section {
+            background-color: #dfe7f5;
+        }
+        .discount-amount {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff5733;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 10; /* Ensure it is above the image */
+            display: inline-block; /* Ensure it doesn't collapse */
+        }
+        .form-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-button a {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .form-button a:hover {
+            background-color: #ff7849;
+            transform: scale(1.05);
+        }
+        .contact-section {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .contact-section p {
+            margin: 10px 0;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                padding: 10px;
+            }
+            .offer, .offer-description, .discount-section {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            .form-button a {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+            .contact-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DEERCUP TOURNAMENT</h1>
+    </header>
+    <div class="container">
+        <div class="offer">
+            <h2>BOOK NOW TO GET EXCLUSIVE DISCOUNT</h2>
+            <p>Get an exciting GIFT HAMPERS</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
+                <img src="https://i.postimg.cc/rF0CdydZ/Discount-offer.png" alt="Special Offer Image">
+            </a>
+        </div>
+        <div class="offer-description">
+            <h3>About Our Offer</h3>
+            <p>We're excited to present exclusive discounts during our special event! Save big with ₹50,000 off on SXR 160 and Elegante  and ₹25,000 off on the SR Race. Additionally, enjoy a ₹15,000 discount on all other scooters. Don't miss this opportunity to get your dream scooter at an unbeatable price. Book now to take advantage of these fantastic offers!</p>
+        </div>
+        
+        <!-- Discount Section 1 -->
+        <div class="discount-section">
+            <h3>Vespa ELEGANTE - Special Discount</h3>
+            <p>Get Rs. 50,000 off on Vespa Elegante!</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
+                <img src="https://i.postimg.cc/PJQT9ttK/Azuro.jpg" alt="Vespa Elegante Image">
+                <div class="discount-amount">Rs. 50,000 OFF</div>
+            </a>
+        </div>
+        
+        <!-- Discount Section 2 -->
+        <div class="discount-section">
+            <h3>Aprilia SXR 160 - Special Discount</h3>
+            <p>Get Rs. 50,000 off on Aprilia SXR 160!</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
+                <img src="https://i.postimg.cc/v81DP9FS/APRILIA-SXR160-H-057-2-C-e1705015628422.webp" alt="Aprilia SXR 160 Image">
+                <div class="discount-amount">Rs. 50,000 OFF</div>
+            </a>
+        </div>
+        
+        <!-- Discount Section 3 -->
+        <div class="discount-section">
+            <h3>Aprilia SR Race - Special Discount</h3>
+            <p>Get Rs. 25,000 off on Aprilia SR Race!</p>
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank" style="position: relative; display: inline-block;">
+                <img src="https://i.postimg.cc/26vH7GmN/aprilia-nepal-20240808-0001.jpg" alt="Aprilia SR Race Image">
+                <div class="discount-amount">Rs. 25,000 OFF</div>
+            </a>
+        </div>
+        
+        <div class="form-button">
+            <a href="https://forms.gle/11dBjnmfVPLanQoD7" target="_blank">Fill Out Our Form</a>
+        </div>
+
+        <div class="contact-section">
+            <h1>Fill out the form to get your discounts</h1>
+            <h2>Contact us: 9801152470, 01-5913564</h2>
+            <div class="social-media">
+                <a href="https://www.facebook.com/ApriliaNepal/" target="_blank">
+                    <img src="https://i.postimg.cc/V67ctHHK/Facebook-icon-svg.png" alt="Facebook Icon"> Aprilia Facebook
+                </a>
+                <a href="https://www.instagram.com/aprilia.nepal/?hl=en" target="_blank">
+                    <img src="https://i.postimg.cc/658BrtKn/Instagram-logo-2016-svg.webp" alt="Instagram Icon"> Aprilia Instagram
+                </a>
+                <a href="https://www.facebook.com/VespaApriliaNepal" target="_blank">
+                    <img src="https://i.postimg.cc/V67ctHHK/Facebook-icon-svg.png" alt="Facebook Icon"> Vespa Facebook
+                </a>
+                <a href="https://www.instagram.com/vespanepal/?hl=en" target="_blank">
+                    <img src="https://i.postimg.cc/658BrtKn/Instagram-logo-2016-svg.webp" alt="Instagram Icon"> Vespa Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
